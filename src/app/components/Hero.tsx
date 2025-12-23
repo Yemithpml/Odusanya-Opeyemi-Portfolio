@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Greetings from "./Greetings";
+import TechStack from "./tech-stack";
 
 function Hero() {
   return (
-    <section id="home" className="h-screen flex items-center">
+    <section id="home" className="h-screen flex flex-col justify-center">
       <div className="w-full max-w-6xl mx-auto px-6 md:px-12 lg:ml-40 xl:ml-56">
-
+        
         <div className="mb-6 mt-0 md:mt-20">
           <Image
             src="/hero.jpg"
@@ -17,10 +18,8 @@ function Hero() {
           />
         </div>
 
-        {/* Greeting */}
         <Greetings />
 
-        {/* Text */}
         <div className="mt-4">
           <h1 className="text-5xl md:text-6xl font-bold">
             I'm Opeyemi
@@ -29,11 +28,10 @@ function Hero() {
           <p className="mt-4 text-lg md:text-2xl text-gray-600 max-w-xl">
             I'm a Front-End Engineer in the React Ecosystem.
             <br />
-            Opened to gaining experience in building scalable web applications.
+            Opened to gaining experience with building scalable web applications.
           </p>
         </div>
 
-        {/* Buttons */}
         <div className="mt-8 flex gap-4">
           <button className="px-6 py-2 rounded-lg bg-black text-white hover:scale-105 transition">
             Projects
@@ -43,6 +41,12 @@ function Hero() {
           </button>
         </div>
       </div>
+
+      {/* TECH STACK — FULL WIDTH */}
+      <div className="w-full">
+        <TechStack />
+      </div>
+
     </section>
   );
 }
