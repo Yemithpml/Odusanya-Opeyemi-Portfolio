@@ -1,8 +1,48 @@
+import Image from "next/image";
+import Greetings from "./Greetings";
+
 function Hero() {
   return (
-    <section id="home" className="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
-      <h1 className="text-5xl font-bold">Hi, I'm David 👋</h1>
-      <p className="mt-4 text-xl">Front-End Engineer | Building scalable web apps</p>
+    <section id="home" className="h-screen flex items-center">
+      <div className="w-full max-w-6xl mx-auto px-6 md:px-12 lg:ml-40 xl:ml-56">
+
+        <div className="mb-6 mt-0 md:mt-20">
+          <Image
+            src="/hero.jpg"
+            alt="Opeyemi"
+            width={128}
+            height={128}
+            priority
+            className="rounded-full object-cover"
+          />
+        </div>
+
+        {/* Greeting */}
+        <Greetings />
+
+        {/* Text */}
+        <div className="mt-4">
+          <h1 className="text-5xl md:text-6xl font-bold">
+            I'm Opeyemi
+          </h1>
+
+          <p className="mt-4 text-lg md:text-2xl text-gray-600 max-w-xl">
+            I'm a Front-End Engineer in the React Ecosystem.
+            <br />
+            Opened to gaining experience in building scalable web applications.
+          </p>
+        </div>
+
+        {/* Buttons */}
+        <div className="mt-8 flex gap-4">
+          <button className="px-6 py-2 rounded-lg bg-black text-white hover:scale-105 transition">
+            Projects
+          </button>
+          <button className="px-6 py-2 rounded-lg border hover:bg-gray-100 transition">
+            Resume
+          </button>
+        </div>
+      </div>
     </section>
   );
 }
