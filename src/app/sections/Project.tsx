@@ -1,12 +1,14 @@
-// src/app/components/Projects.tsx
-import { projects } from "@/data/projects";
-
-export default function Projects() {
+import projects from "@/app/data/projects";
+function Projects() {
   return (
-    <section id="projects">
-      {projects.map((p) => (
-        <div key={p.id}>{p.title}</div>
-      ))}
+    <section
+      id="projects"
+      className="max-w-6xl mx-auto px-6 md:px-12 lg:ml-40 xl:ml-56 py-20"
+    >
+      <h2 className="text-4xl font-bold mb-8">Projects</h2>
+      {/* Project items would go here */}
     </section>
   );
 }
+
+export default Projects;

@@ -4,7 +4,10 @@ import TechStack from "./tech-stack";
 
 function Hero() {
   return (
-    <section id="home" className="h-screen flex flex-col justify-center">
+    <section
+      id="home"
+      className="h-screen flex flex-col justify-center overflow-x-hidden"
+    >
       <div className="w-full max-w-6xl mx-auto px-6 md:px-12 lg:ml-40 xl:ml-56">
         
         <div className="mb-6 mt-0 md:mt-20">
@@ -33,20 +36,25 @@ function Hero() {
         </div>
 
         <div className="mt-8 flex gap-4">
-          <button className="px-6 py-2 rounded-lg bg-black text-white hover:scale-105 transition">
+          <a
+            href="#projects"
+            className="px-6 py-2 rounded-lg bg-black text-white hover:scale-105 transition inline-block"
+          >
             Projects
-          </button>
-          <button className="px-6 py-2 rounded-lg border hover:bg-gray-100 transition">
+          </a>
+          <a
+            href="/resume.pdf"
+            className="px-6 py-2 rounded-lg border hover:bg-gray-100 transition inline-block"
+          >
             Resume
-          </button>
+          </a>
         </div>
       </div>
 
-      {/* TECH STACK — FULL WIDTH */}
-      <div className="w-full">
+      {/* TECH STACK — WIDTH CONTAINED */}
+      <div className="w-full overflow-x-hidden">
         <TechStack />
       </div>
-
     </section>
   );
 }
