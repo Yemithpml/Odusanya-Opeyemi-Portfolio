@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 const projects = [
   {
     title: "Big-Bang Store",
     description:
       "An e-commerce website having all necessary features of a real store, it displays premium headphones. Built with React and Tailwind CSS.",
-    image: "/bigbang.png",
+    image: "/big-bang.png",
     tags: ["React", "Tailwind", "E-commerce"],
     live: "https://big-bang-store.vercel.app/",
     github: "https://github.com/yemithpml/big-bang-store",
