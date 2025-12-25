@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="h-screen flex flex-col justify-center overflow-x-hidden"
+      className="mt-40 md:mt-5  flex flex-col justify-center overflow-x-hidden bg-white"
     >
       <div className="w-full max-w-6xl mx-auto px-6 md:px-12 lg:ml-40 xl:ml-56">
         
@@ -50,8 +50,7 @@ function Hero() {
           </a>
         </div>
       </div>
-
-      {/* TECH STACK — WIDTH CONTAINED */}
+      
       <div className="w-full overflow-x-hidden">
         <TechStack />
       </div>

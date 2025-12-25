@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
-      <div className="flex items-center justify-between bg-white/90 backdrop-blur-md shadow-lg rounded-full px-4 py-2 transition-all duration-300 w-[300px] sm:w-[360px] md:w-[440px] lg:w-[520px]">
+      <div className="flex items-center justify-between bg-white/90 backdrop-blur-md shadow-lg rounded-full px-6 py-4 transition-all duration-300 w-[300px] sm:w-[360px] md:w-[440px] lg:w-[520px]">
         {links.map((link) => (
           <a
             key={link.id}
